@@ -9,6 +9,7 @@ import { Label } from "@/components/ui/label";
 import { Calendar } from "@/components/ui/calendar";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Brain, CalendarIcon, Clock } from "lucide-react";
+// @ts-ignore - Firebase db may be null during build
 import { db } from "@/lib/firebase";
 import { collection, addDoc } from "firebase/firestore";
 import { toast } from "sonner";
@@ -34,6 +35,11 @@ export default function BookingPage() {
     
     if (!date || !formData.time) {
       toast.error("Por favor selecciona una fecha y hora");
+      return;
+    }
+
+    if (!db) {
+      toast.error("Error de conexión. Por favor recarga la página.");
       return;
     }
 

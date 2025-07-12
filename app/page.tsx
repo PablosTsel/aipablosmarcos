@@ -28,6 +28,7 @@ export default function AIConsultingLanding() {
             <Button
               variant="outline"
               className="border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-slate-900 bg-transparent"
+              onClick={() => router.push('/booking')}
             >
               Contacto
             </Button>

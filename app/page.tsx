@@ -1,9 +1,13 @@
+'use client'
+
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Card, CardContent } from "@/components/ui/card"
 import { Instagram, Youtube, Sparkles, Brain, Zap, ArrowRight } from "lucide-react"
+import { useRouter } from "next/navigation"
 
 export default function AIConsultingLanding() {
+  const router = useRouter();
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
       {/* Animated background elements */}
@@ -31,10 +35,10 @@ export default function AIConsultingLanding() {
         </header>
 
         {/* Hero Section */}
-        <section className="container mx-auto px-4 py-12 md:py-20">
+        <section className="container mx-auto px-4 py-8 md:py-12">
           <div className="text-center max-w-4xl mx-auto">
             {/* Profile Image */}
-            <div className="relative mb-8">
+            <div className="relative mb-6">
               <div className="w-40 h-40 mx-auto rounded-full overflow-hidden border-4 border-gradient-to-r from-cyan-400 to-purple-500 p-1">
                 <div className="w-full h-full rounded-full overflow-hidden">
                   <img
@@ -47,7 +51,7 @@ export default function AIConsultingLanding() {
               <div className="absolute inset-0 w-40 h-40 mx-auto rounded-full border-4 border-cyan-400 animate-pulse opacity-30"></div>
             </div>
 
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-4 leading-tight">
               Transforma tu
               <span className="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
                 {" "}
@@ -56,13 +60,13 @@ export default function AIConsultingLanding() {
               con IA
             </h1>
 
-            <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl text-gray-300 mb-6 max-w-3xl mx-auto">
               Descubre el poder de la Inteligencia Artificial para revolucionar tu empresa y alcanzar nuevos niveles de
               éxito
             </p>
 
             {/* Social Media Icons */}
-            <div className="flex justify-center space-x-6 mb-12">
+            <div className="flex justify-center space-x-6 mb-8">
               <a href="#" className="group">
                 <div className="w-16 h-16 bg-gradient-to-r from-pink-500 to-rose-500 rounded-full flex items-center justify-center transform transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-pink-500/50">
                   <Instagram className="h-8 w-8 text-white" />
@@ -81,7 +85,7 @@ export default function AIConsultingLanding() {
             </div>
 
             {/* Main CTA Text */}
-            <div className="mb-12">
+            <div className="mb-8">
               <h2 className="text-2xl md:text-3xl font-semibold text-cyan-400 mb-4">
                 Asesoría de Inteligencia Artificial
               </h2>
@@ -93,8 +97,8 @@ export default function AIConsultingLanding() {
         </section>
 
         {/* Features Section */}
-        <section className="container mx-auto px-4 py-12">
-          <div className="grid md:grid-cols-3 gap-6 mb-16">
+        <section className="container mx-auto px-4 py-4">
+          <div className="grid md:grid-cols-3 gap-6 mb-8">
             <Card className="bg-slate-800/50 border-slate-700 backdrop-blur-sm">
               <CardContent className="p-6 text-center">
                 <Zap className="h-12 w-12 text-yellow-400 mx-auto mb-4" />
@@ -119,44 +123,18 @@ export default function AIConsultingLanding() {
           </div>
         </section>
 
-        {/* Subscription Section */}
-        <section className="container mx-auto px-4 py-16">
-          <Card className="max-w-2xl mx-auto bg-gradient-to-r from-slate-800 to-slate-900 border-slate-700 shadow-2xl">
-            <CardContent className="p-8 md:p-12">
-              <div className="text-center mb-8">
-                <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">Únete a la Revolución IA</h3>
-                <p className="text-lg text-gray-300">
-                  Recibe insights exclusivos, casos de estudio y las últimas tendencias en Inteligencia Artificial
-                </p>
-              </div>
-
-              <form className="space-y-4">
-                <div className="grid md:grid-cols-2 gap-4">
-                  <Input
-                    type="text"
-                    placeholder="Nombre"
-                    className="bg-slate-700 border-slate-600 text-white placeholder-gray-400 focus:border-cyan-400 focus:ring-cyan-400"
-                  />
-                  <Input
-                    type="email"
-                    placeholder="Email"
-                    className="bg-slate-700 border-slate-600 text-white placeholder-gray-400 focus:border-cyan-400 focus:ring-cyan-400"
-                  />
-                </div>
-                <Input
-                  type="text"
-                  placeholder="Empresa (opcional)"
-                  className="bg-slate-700 border-slate-600 text-white placeholder-gray-400 focus:border-cyan-400 focus:ring-cyan-400"
-                />
-                <Button className="w-full bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-600 hover:to-purple-700 text-white font-semibold py-3 text-lg group">
-                  Suscribirse Ahora
-                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                </Button>
-              </form>
-
-              <p className="text-sm text-gray-400 text-center mt-4">No spam. Cancela cuando quieras. 100% gratuito.</p>
-            </CardContent>
-          </Card>
+        {/* Booking Section */}
+        <section className="container mx-auto px-4 py-4">
+          <div className="text-center">
+            <Button
+              size="lg"
+              className="bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-600 hover:to-purple-700 text-white font-semibold py-8 px-12 text-2xl group transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
+              onClick={() => router.push('/booking')}
+            >
+              Rellena el formulario y agenda tu llamada gratuita
+              <ArrowRight className="ml-4 h-8 w-8 group-hover:translate-x-1 transition-transform" />
+            </Button>
+          </div>
         </section>
 
         {/* Footer */}

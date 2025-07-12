@@ -128,15 +128,12 @@ export default function AIConsultingLanding() {
           <div className="text-center">
             <Button
               size="lg"
-              className="bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-600 hover:to-purple-700 text-white font-semibold py-4 px-8 md:py-8 md:px-16 text-sm md:text-2xl group transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl w-full max-w-md md:max-w-3xl mx-auto"
+              className="bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-600 hover:to-purple-700 text-white font-semibold py-4 px-4 md:py-8 md:px-12 text-sm md:text-2xl group transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl w-full max-w-sm md:max-w-2xl mx-auto"
               onClick={() => router.push('/booking')}
             >
-              <div className="flex flex-col md:flex-row items-center justify-center w-full">
-                <span className="block md:inline text-center">Rellena el formulario</span>
-                <span className="block md:inline md:ml-1 text-center">y agenda tu llamada</span>
-                <span className="block md:inline md:ml-1 text-center">gratuita</span>
-                <ArrowRight className="ml-0 md:ml-4 h-5 w-5 md:h-8 md:w-8 group-hover:translate-x-1 transition-transform mt-1 md:mt-0" />
-              </div>
+              <span className="block md:inline text-center">Agenda tu llamada</span>
+              <span className="block md:inline md:ml-1 text-center">gratuita</span>
+              <ArrowRight className="ml-2 md:ml-4 h-5 w-5 md:h-8 md:w-8 group-hover:translate-x-1 transition-transform inline-block mt-1 md:mt-0" />
             </Button>
           </div>
         </section>

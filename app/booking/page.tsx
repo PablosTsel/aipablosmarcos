@@ -43,6 +43,7 @@ export default function BookingPage() {
       return;
     }
 
+    // @ts-ignore - Firebase db type handled in configuration
     try {
       const bookingData = {
         ...formData,
@@ -79,18 +80,18 @@ export default function BookingPage() {
           </nav>
         </header>
 
-        <div className="container mx-auto px-4 py-8 max-w-4xl">
-          <h1 className="text-3xl md:text-4xl font-bold text-white text-center mb-8">
+        <div className="container mx-auto px-4 py-6 md:py-8 max-w-4xl">
+          <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white text-center mb-6 md:mb-8 px-2">
             Agenda tu llamada gratuita
           </h1>
 
-          <form onSubmit={handleSubmit} className="space-y-8">
+          <form onSubmit={handleSubmit} className="space-y-6 md:space-y-8">
             {/* Date and Time Selection */}
-            <div className="grid md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
               <Card className="bg-slate-800/50 border-slate-700 backdrop-blur-sm">
-                <CardHeader>
-                  <CardTitle className="text-white flex items-center gap-2">
-                    <CalendarIcon className="h-5 w-5 text-cyan-400" />
+                <CardHeader className="pb-4 md:pb-6">
+                  <CardTitle className="text-white flex items-center gap-2 text-lg md:text-xl">
+                    <CalendarIcon className="h-4 w-4 md:h-5 md:w-5 text-cyan-400" />
                     Selecciona una fecha
                   </CardTitle>
                 </CardHeader>
@@ -107,9 +108,9 @@ export default function BookingPage() {
               </Card>
 
               <Card className="bg-slate-800/50 border-slate-700 backdrop-blur-sm">
-                <CardHeader>
-                  <CardTitle className="text-white flex items-center gap-2">
-                    <Clock className="h-5 w-5 text-cyan-400" />
+                <CardHeader className="pb-4 md:pb-6">
+                  <CardTitle className="text-white flex items-center gap-2 text-lg md:text-xl">
+                    <Clock className="h-4 w-4 md:h-5 md:w-5 text-cyan-400" />
                     Selecciona una hora
                   </CardTitle>
                 </CardHeader>
@@ -132,10 +133,10 @@ export default function BookingPage() {
 
             {/* Form Fields */}
             <Card className="bg-slate-800/50 border-slate-700 backdrop-blur-sm">
-              <CardHeader>
-                <CardTitle className="text-white">Información de contacto</CardTitle>
+              <CardHeader className="pb-4 md:pb-6">
+                <CardTitle className="text-white text-lg md:text-xl">Información de contacto</CardTitle>
               </CardHeader>
-              <CardContent className="space-y-4">
+              <CardContent className="space-y-4 md:space-y-6">
                 <div>
                   <Label htmlFor="nombre" className="text-gray-300">1. Nombre completo</Label>
                   <p className="text-sm text-gray-400 mb-2">Para personalizar mensajes y llamadas</p>

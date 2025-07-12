@@ -35,11 +35,11 @@ export default function AIConsultingLanding() {
         </header>
 
         {/* Hero Section */}
-        <section className="container mx-auto px-4 py-8 md:py-12">
+        <section className="container mx-auto px-4 py-6 md:py-8 lg:py-12">
           <div className="text-center max-w-4xl mx-auto">
             {/* Profile Image */}
-            <div className="relative mb-6">
-              <div className="w-40 h-40 mx-auto rounded-full overflow-hidden border-4 border-gradient-to-r from-cyan-400 to-purple-500 p-1">
+            <div className="relative mb-4 md:mb-6">
+              <div className="w-32 h-32 md:w-40 md:h-40 mx-auto rounded-full overflow-hidden border-4 border-gradient-to-r from-cyan-400 to-purple-500 p-1">
                 <div className="w-full h-full rounded-full overflow-hidden">
                   <img
                     src="/logo.png"
@@ -48,10 +48,10 @@ export default function AIConsultingLanding() {
                   />
                 </div>
               </div>
-              <div className="absolute inset-0 w-40 h-40 mx-auto rounded-full border-4 border-cyan-400 animate-pulse opacity-30"></div>
+              <div className="absolute inset-0 w-32 h-32 md:w-40 md:h-40 mx-auto rounded-full border-4 border-cyan-400 animate-pulse opacity-30"></div>
             </div>
 
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-4 leading-tight">
+            <h1 className="text-3xl md:text-6xl lg:text-7xl font-bold text-white mb-3 md:mb-4 leading-tight px-2">
               Transforma tu
               <span className="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
                 {" "}
@@ -60,36 +60,36 @@ export default function AIConsultingLanding() {
               con IA
             </h1>
 
-            <p className="text-xl md:text-2xl text-gray-300 mb-6 max-w-3xl mx-auto">
+            <p className="text-lg md:text-xl lg:text-2xl text-gray-300 mb-4 md:mb-6 max-w-3xl mx-auto px-4">
               Descubre el poder de la Inteligencia Artificial para revolucionar tu empresa y alcanzar nuevos niveles de
               éxito
             </p>
 
             {/* Social Media Icons */}
-            <div className="flex justify-center space-x-6 mb-8">
-              <a href="#" className="group">
-                <div className="w-16 h-16 bg-gradient-to-r from-pink-500 to-rose-500 rounded-full flex items-center justify-center transform transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-pink-500/50">
-                  <Instagram className="h-8 w-8 text-white" />
+            <div className="flex justify-center space-x-4 md:space-x-6 mb-6 md:mb-8">
+              <a href="https://www.instagram.com/ia.pablosmarcos/" target="_blank" rel="noopener noreferrer" className="group">
+                <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-r from-pink-500 to-rose-500 rounded-full flex items-center justify-center transform transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-pink-500/50">
+                  <Instagram className="h-6 w-6 md:h-8 md:w-8 text-white" />
                 </div>
               </a>
-              <a href="#" className="group">
-                <div className="w-16 h-16 bg-gradient-to-r from-red-500 to-red-600 rounded-full flex items-center justify-center transform transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-red-500/50">
-                  <Youtube className="h-8 w-8 text-white" />
+              <a href="https://www.youtube.com/@IAPablosMarcos" target="_blank" rel="noopener noreferrer" className="group">
+                <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-r from-red-500 to-red-600 rounded-full flex items-center justify-center transform transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-red-500/50">
+                  <Youtube className="h-6 w-6 md:h-8 md:w-8 text-white" />
                 </div>
               </a>
-              <a href="#" className="group">
-                <div className="w-16 h-16 bg-gradient-to-r from-black to-gray-800 rounded-full flex items-center justify-center transform transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-gray-500/50">
-                  <img src="/tiktok.jpg" alt="TikTok" className="h-14 w-14 object-cover rounded-full" />
+              <a href="https://www.tiktok.com/@iapablosmarcos" target="_blank" rel="noopener noreferrer" className="group">
+                <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-r from-black to-gray-800 rounded-full flex items-center justify-center transform transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-gray-500/50">
+                  <img src="/tiktok.jpg" alt="TikTok" className="h-10 w-10 md:h-14 md:w-14 object-cover rounded-full" />
                 </div>
               </a>
             </div>
 
             {/* Main CTA Text */}
-            <div className="mb-8">
-              <h2 className="text-2xl md:text-3xl font-semibold text-cyan-400 mb-4">
+            <div className="mb-6 md:mb-8 px-4">
+              <h2 className="text-xl md:text-2xl lg:text-3xl font-semibold text-cyan-400 mb-3 md:mb-4">
                 Asesoría de Inteligencia Artificial
               </h2>
-              <p className="text-lg text-gray-300 max-w-2xl mx-auto">
+              <p className="text-base md:text-lg text-gray-300 max-w-2xl mx-auto">
                 Expertos en implementación de soluciones de IA personalizadas para tu industria
               </p>
             </div>
@@ -98,26 +98,26 @@ export default function AIConsultingLanding() {
 
         {/* Features Section */}
         <section className="container mx-auto px-4 py-4">
-          <div className="grid md:grid-cols-3 gap-6 mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mb-6 md:mb-8">
             <Card className="bg-slate-800/50 border-slate-700 backdrop-blur-sm">
-              <CardContent className="p-6 text-center">
-                <Zap className="h-12 w-12 text-yellow-400 mx-auto mb-4" />
-                <h3 className="text-xl font-semibold text-white mb-2">Automatización</h3>
-                <p className="text-gray-300">Optimiza procesos y reduce costos operativos</p>
+              <CardContent className="p-4 md:p-6 text-center">
+                <Zap className="h-10 w-10 md:h-12 md:w-12 text-yellow-400 mx-auto mb-3 md:mb-4" />
+                <h3 className="text-lg md:text-xl font-semibold text-white mb-2">Automatización</h3>
+                <p className="text-sm md:text-base text-gray-300">Optimiza procesos y reduce costos operativos</p>
               </CardContent>
             </Card>
             <Card className="bg-slate-800/50 border-slate-700 backdrop-blur-sm">
-              <CardContent className="p-6 text-center">
-                <Brain className="h-12 w-12 text-purple-400 mx-auto mb-4" />
-                <h3 className="text-xl font-semibold text-white mb-2">Análisis Inteligente</h3>
-                <p className="text-gray-300">Toma decisiones basadas en datos precisos</p>
+              <CardContent className="p-4 md:p-6 text-center">
+                <Brain className="h-10 w-10 md:h-12 md:w-12 text-purple-400 mx-auto mb-3 md:mb-4" />
+                <h3 className="text-lg md:text-xl font-semibold text-white mb-2">Análisis Inteligente</h3>
+                <p className="text-sm md:text-base text-gray-300">Toma decisiones basadas en datos precisos</p>
               </CardContent>
             </Card>
             <Card className="bg-slate-800/50 border-slate-700 backdrop-blur-sm">
-              <CardContent className="p-6 text-center">
-                <Sparkles className="h-12 w-12 text-cyan-400 mx-auto mb-4" />
-                <h3 className="text-xl font-semibold text-white mb-2">Innovación</h3>
-                <p className="text-gray-300">Mantente a la vanguardia tecnológica</p>
+              <CardContent className="p-4 md:p-6 text-center">
+                <Sparkles className="h-10 w-10 md:h-12 md:w-12 text-cyan-400 mx-auto mb-3 md:mb-4" />
+                <h3 className="text-lg md:text-xl font-semibold text-white mb-2">Innovación</h3>
+                <p className="text-sm md:text-base text-gray-300">Mantente a la vanguardia tecnológica</p>
               </CardContent>
             </Card>
           </div>
@@ -128,11 +128,12 @@ export default function AIConsultingLanding() {
           <div className="text-center">
             <Button
               size="lg"
-              className="bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-600 hover:to-purple-700 text-white font-semibold py-8 px-12 text-2xl group transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
+              className="bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-600 hover:to-purple-700 text-white font-semibold py-4 px-6 md:py-8 md:px-12 text-lg md:text-2xl group transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl w-full max-w-2xl"
               onClick={() => router.push('/booking')}
             >
-              Rellena el formulario y agenda tu llamada gratuita
-              <ArrowRight className="ml-4 h-8 w-8 group-hover:translate-x-1 transition-transform" />
+              <span className="block md:inline">Rellena el formulario y</span>
+              <span className="block md:inline md:ml-1">agenda tu llamada gratuita</span>
+              <ArrowRight className="ml-2 md:ml-4 h-6 w-6 md:h-8 md:w-8 group-hover:translate-x-1 transition-transform inline-block" />
             </Button>
           </div>
         </section>
